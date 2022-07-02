@@ -1,0 +1,27 @@
+{
+    "name": "GetGroupList",
+    "description": "Get the full list of groups that you can share your post on on facebook.",
+    "version": "0.1",
+    "manifest_version": 3,
+    "icons": {
+        "16": "/images/16.png",
+        "48": "/images/48.png",
+        "128": "/images/128.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_title": "Click Me",
+        "default_popup": "/popup/popup.html"
+    },
+    "permissions": [
+        "scripting",
+        "tabs",
+        "notifications"
+    ],
+    "host_permissions": [
+        "http://*/",
+        "https://*/"
+    ]
+}
