@@ -1,0 +1,36 @@
+/* https://www.color-hex.com/color-palette/98179 */
+/* --------main elements*/
+body{
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: #252526;
+    color: #fff;
+}
+
+main{
+    padding: 10px;
+    background-color: #1e1e1e;
+    min-height: 100vh;
+}
+h1{
+    text-align: center;
+}
+section{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+div{
+    background-color: #2d2d30;
+    padding: 20px;
+}
+
+/* ------------section 2 */
+
+textarea{
+    background-color: 	#3e3e42;
+}
