@@ -20,7 +20,6 @@ document.querySelector("input").addEventListener("click", () => {
         },
         function (result){
             console.log(result)
-            // localStorage.setItem("facebookGroupListData", "fsafsa")
             localStorage.setItem("facebookGroupListData", JSON.stringify(result))
             chrome.tabs.create({ url: "../page/index.html" })
         })
