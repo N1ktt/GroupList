@@ -18,8 +18,9 @@ h1{
     text-align: center;
     font-size: 45px;
     background: -webkit-linear-gradient(#eee, rgb(102, 102, 102));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 section{
@@ -44,6 +45,31 @@ table, tr, td,th{
 td, th{
     padding-left: 4px;
     padding-right: 4px;
+}
+tr:hover{
+    background-color: #494950;
+}
+
+#formatting{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+}
+#formatting div{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+#formatting div label p{
+    margin: 0;
+}
+#formatting div label{
+    margin: 5px;
+}
+#formatting div label input{
+    background-color:#2d2d30;
+    color:#fff;
 }
 
 /* ------------section 2 */
@@ -72,8 +98,4 @@ input[type="button"]:hover{
     border-color: #2d2d30;
     opacity: 0.95;
     font-weight: 450;
-}
-
-#buttons{
-    
 }

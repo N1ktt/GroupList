@@ -14,24 +14,40 @@
             <div>
                 <table>
                     <tr>
-                        <th>Index</th>
-                        <th>Remove</th>
-                        <th>Group Name</th>
+                        <th><input type="checkbox" checked="checked"> Index</th>
+                        <th><input type="checkbox" checked="checked"> Remove</th>
+                        <th><input type="checkbox" checked="checked"> Group Name</th>
                     </tr>
                 </table>
             </div>
-            <div>
+            <div id="formatting">
                 <h2>Formatting options</h2>
+                <div>
+                    <label for="cellSeparator">
+                        <p>Cell sperator:</p>
+                        <input type="text" id="cellSeparator">
+                    </label>
+                    <label for="rowStart">
+                        <p>Row start:</p>
+                        <input type="text" id="rowStart">
+                    </label>
+                    <label for="rowEnd">
+                        <p>Row end:</p>
+                        <input type="text" id="rowEnd">
+                    </label>
+                </div>
+                
+                <input type="button" value="Save options" id="save">
             </div>
         </section>
         <section id="s2">
             <div>
                 <textarea cols="50" rows="10"></textarea>
             </div>
-            <div id="buttons">
-                <input type="button" value="Update">
-                <input type="button" value="Copy to clipboard">
-                <input type="button" value="Save on your computer">
+            <div>
+                <input type="button" value="Update" id="update">
+                <input type="button" value="Copy to clipboard" id="copy">
+                <!-- <input type="button" value="Save on your computer" id="save"> -->
             </div>
         </section>
     </main>
