@@ -16,6 +16,11 @@ main{
 }
 h1{
     text-align: center;
+    font-size: 45px;
+    background: -webkit-linear-gradient(#eee, rgb(102, 102, 102));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 section{
     display: flex;
@@ -30,11 +35,23 @@ div{
     margin: 5px;
 }
 
+/* ------------section 1 */
+
+table, tr, td,th{
+    border-collapse: collapse;
+    border: 1px solid #fff;
+}
+td, th{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
 /* ------------section 2 */
 
 textarea{
     background-color: 	#2d2d30;
     resize: none;
+    color:#fff;
 }
 input[type="button"]{
     margin: 10px;
@@ -56,6 +73,7 @@ input[type="button"]:hover{
     opacity: 0.95;
     font-weight: 450;
 }
+
 #buttons{
     
 }
