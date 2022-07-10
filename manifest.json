@@ -23,5 +23,11 @@
     "host_permissions": [
         "http://*/",
         "https://*/"
-    ]
+    ],
+    "content_scripts": [
+        {
+          "matches": ["https://n1ktt.github.io/chromeext/*"],
+          "js": ["link-detector.js"]
+        }
+      ]
 }
